@@ -2,9 +2,9 @@
 import { combineReducers } from "redux";
 
 // Reducers.
-import FirebaseReducer from "../redux/Firebase/firebase.reducer";
+import ChatgptReducer from "./Chatgpt/chatgpt.reducer";
 
 // Combine reducers.
 export default combineReducers({
-  FirebaseReducer,
+  ChatgptReducer,
 });

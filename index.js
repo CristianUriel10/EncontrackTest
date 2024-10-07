@@ -6,7 +6,7 @@ import { Navigation } from "react-native-navigation";
 import App from "./App";
 import firebase from "@react-native-firebase/app";
 import "@react-native-firebase/firestore";
-import { RNfirebaseConfig } from "./app/redux/Firebase/firebase.api";
+import { RNfirebaseConfig } from "./app/redux/Chatgpt/chatgpt.api";
 
 if (firebase.apps.length === 0) {
   app = firebase.initializeApp(RNfirebaseConfig);
