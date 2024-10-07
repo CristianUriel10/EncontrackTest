@@ -2,8 +2,41 @@
  * @format
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import { Navigation } from "react-native-navigation";
+import App from "./App";
+import firebase from "@react-native-firebase/app";
+import "@react-native-firebase/firestore";
+import { RNfirebaseConfig } from "./app/redux/Firebase/firebase.api";
 
-AppRegistry.registerComponent(appName, () => App);
+if (firebase.apps.length === 0) {
+  app = firebase.initializeApp(RNfirebaseConfig);
+} else {
+  app = firebase.app();
+}
+
+Navigation.registerComponent("Main", () => App);
+Navigation.events().registerAppLaunchedListener(() => {
+  Navigation.setDefaultOptions({
+    topBar: {
+      visible: false,
+      drawBehind: true,
+    },
+    layout: {
+      orientation: ["portrait"],
+    },
+  });
+
+  Navigation.setRoot({
+    root: {
+      stack: {
+        children: [
+          {
+            component: {
+              name: "Main",
+            },
+          },
+        ],
+      },
+    },
+  });
+});
