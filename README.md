@@ -1,3 +1,18 @@
+# Dynamic Story Creation App Encontrack
+
+Esta aplicación móvil de React Native permite la creación de cuentos dinámicos utilizando Inteligencia Artificial (IA). Los usuarios pueden elegir cómo comienza, se desarrolla y termina el cuento, y la IA generará una historia personalizada. Además, cuando el lector llega a la mitad del cuento, se reproduce música suave para ayudar a que se duerman.
+
+Características
+🎨 Generación de cuentos personalizados: El usuario elige entre varias opciones y la IA crea un cuento basado en esas decisiones.
+🎶 Música relajante: Al llegar a la mitad del cuento, se reproduce música para ayudar a los lectores a relajarse o dormir.
+📱 Interfaz llamativa: Diseño amigable para niños con colores vibrantes y fuentes personalizadas.
+🖼️ Soporte para imágenes y videos: Los usuarios pueden adjuntar imágenes o videos que enriquecen la experiencia de la lectura.
+
+![alt text](./app/assets/images/Captura1.png)
+![plot](./app/assets/images/Captura1.png)
+![plot](./app/assets/images/Captura2.png)
+![plot](./app/assets/images/Video.mov)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
@@ -77,13 +92,3 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-
-# Dynamic Story Creation App
-
-Esta aplicación móvil de React Native permite la creación de cuentos dinámicos utilizando Inteligencia Artificial (IA). Los usuarios pueden elegir cómo comienza, se desarrolla y termina el cuento, y la IA generará una historia personalizada. Además, cuando el lector llega a la mitad del cuento, se reproduce música suave para ayudar a que se duerman.
-
-Características
-🎨 Generación de cuentos personalizados: El usuario elige entre varias opciones y la IA crea un cuento basado en esas decisiones.
-🎶 Música relajante: Al llegar a la mitad del cuento, se reproduce música para ayudar a los lectores a relajarse o dormir.
-📱 Interfaz llamativa: Diseño amigable para niños con colores vibrantes y fuentes personalizadas.
-🖼️ Soporte para imágenes y videos: Los usuarios pueden adjuntar imágenes o videos que enriquecen la experiencia de la lectura.
