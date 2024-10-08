@@ -8,9 +8,9 @@ Características
 📱 Interfaz llamativa: Diseño amigable para niños con colores vibrantes y fuentes personalizadas.
 🖼️ Soporte para imágenes y videos: Los usuarios pueden adjuntar imágenes o videos que enriquecen la experiencia de la lectura.
 
-<img src="./app/assets/images/Captura1.png" alt="plot" width="100" />
-<img src="./app/assets/images/Captura2.png" alt="plot" width="100" />
-![Demo del video](./app//assets//images//Video.mov)
+<img src="./app/assets/images/Captura1.png" alt="plot" width="200" />
+<img src="./app/assets/images/Captura2.png" alt="plot" width="200" />
+![Descripción del GIF](./app/assets/images/Video.gif)
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
