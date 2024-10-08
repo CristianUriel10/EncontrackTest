@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, FlatList } from "react-native";
+import { View, Text, FlatList, ActivityIndicator } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
 import { Navigation } from "react-native-navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { generateStory } from "../../../redux/Chatgpt/chatgpt.actions";
 import CloudButton from "../../Controls/CloudButton/CloudButton";
-import { selectStory } from "../../../redux/Chatgpt/chatgpt.selectors";
+import {
+  selectLoading,
+  selectStory,
+} from "../../../redux/Chatgpt/chatgpt.selectors";
 import { styles } from "./styles";
 
 const StoryCreationScreen = (props) => {
@@ -13,6 +16,7 @@ const StoryCreationScreen = (props) => {
 
   const [openBeginning, setOpenBeginning] = useState(false);
   const story = useSelector(selectStory);
+  const loading = useSelector(selectLoading);
   const [beginning, setBeginning] = useState(null);
   const [beginningItems, setBeginningItems] = useState([
     { label: "Adventure", value: "Adventure" },
@@ -66,6 +70,7 @@ const StoryCreationScreen = (props) => {
 
   const renderDropDowns = () => (
     <View style={styles.dropdownContainer}>
+      <Text style={styles.label}>Encontrack</Text>
       <Text style={styles.label}>Choose the Beginning:</Text>
       <DropDownPicker
         open={openBeginning}
@@ -120,8 +125,15 @@ const StoryCreationScreen = (props) => {
         listItemLabelStyle={styles.listItemLabel}
         zIndex={1000}
       />
-
-      <CloudButton onPress={handleGenerateStory} />
+      {loading ? (
+        <ActivityIndicator
+          style={{ marginTop: 30 }}
+          size="large"
+          color="#FF7043"
+        />
+      ) : (
+        <CloudButton onPress={handleGenerateStory} />
+      )}
     </View>
   );
 
