@@ -10,7 +10,7 @@ Características
 
 <img src="./app/assets/images/Captura1.png" alt="plot" width="200" />
 <img src="./app/assets/images/Captura2.png" alt="plot" width="200" />
-![Descripción del GIF](./app/assets/images/Video.gif)
+<img src="./app/assets/images/Video.gif" alt="plot" width="200" />
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
